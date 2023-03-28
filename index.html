@@ -7,6 +7,7 @@
 	<title>ikirito</title>
 	<link rel="favicon" href="favicon.ico">
 	<meta name=“description” content=“ikirito，总站，博客，导航站” />
+	<link rel="shortcut icon" href="avatar.png" />
 	<link rel="stylesheet" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -49,25 +50,25 @@
 	<div class="all_main">
 	</div>
 	<div class="ml-nav">
-			<!-- 头部导航栏 -->
-			<div id="nav" class="navigation">
-				<ul>
-					<li data-menuanchor="page1" class="list">
-						<a href="#page1">
-							<span class="icon">
-								<ion-icon name="chatbubbles-outline"></ion-icon>
-							</span>
-							<span class="text">个人名牌</span>
-						</a>
-					</li>
-					<div class="indicator"></div>
-				</ul>
-			</div>
+		<!-- 头部导航栏 -->
+		<div id="nav" class="navigation">
+			<ul>
+				<li data-menuanchor="page1" class="list">
+					<a href="#page1">
+						<span class="icon">
+							<ion-icon name="chatbubbles-outline"></ion-icon>
+						</span>
+						<span class="text">个人名牌</span>
+					</a>
+				</li>
+				<div class="indicator"></div>
+			</ul>
 		</div>
+	</div>
 	<!-- 局部代码 -->
-	
+
 	<div class="main_center">
-	    
+
 		<!-- 主页面 -->
 		<div class="section sectio1">
 			<div class="bg"><img src="images/CC.jpg" alt=""></div>
@@ -98,43 +99,45 @@
 									</span>
 								</div>
 								<div class="change">
-								<h2>电商2003-梁文豪<br><span>个人名牌</span></h2>
-								<div>
-								<br/>
-                                <h3>资深&nbsp;<span><a style="color:blue;" href="https://www.steamidfinder.com/signature/76561198177270271.png" target="_blank">Steam</a></span>&nbsp;玩家</h3>
-								<br/>
-                                <h2>★一个喜欢捣鼓代码却不想当码农的人★</h2>
-                                <br/>
-                                <h2>未来所向：前端工程师/运维工程师</h2>
+									<h2>电商2003-梁文豪<br><span>个人名牌</span></h2>
+									<div>
+										<br />
+										<h3>资深&nbsp;<span><a style="color:blue;"
+													href="https://www.steamidfinder.com/signature/76561198177270271.png"
+													target="_blank">Steam</a></span>&nbsp;玩家</h3>
+										<br />
+										<h2>★一个喜欢捣鼓代码却不想当码农的人★</h2>
+										<br />
+										<h2>未来所向：前端工程师/运维工程师</h2>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	<!-- 音乐插件 -->
-	<!--<div class="music">-->
-	<!--	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86-->
-	<!--		src="http://music.163.com/outchain/player?type=2&id=537787665&auto=1&height=66"></iframe>-->
-	<!--</div>-->
-	<script>
-		const list = document.querySelectorAll('.list')
-		function activeLink() {
-			list.forEach(item => {
-				item.classList.remove('active')
-				this.classList.add('active')
-			})
-		}
-		list.forEach(item => {
-			item.addEventListener('click', activeLink)
-		})
-	</script>
+			<!-- 音乐插件 -->
+			<!--<div class="music">-->
+			<!--	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86-->
+			<!--		src="http://music.163.com/outchain/player?type=2&id=537787665&auto=1&height=66"></iframe>-->
+			<!--</div>-->
+			<script>
+				const list = document.querySelectorAll('.list')
+				function activeLink() {
+					list.forEach(item => {
+						item.classList.remove('active')
+						this.classList.add('active')
+					})
+				}
+				list.forEach(item => {
+					item.addEventListener('click', activeLink)
+				})
+			</script>
 
-	<script src="js/clock.js"></script>
-	<!-- 要使用别人提供的 icon 图标，所以引入两个 js 文件 -->
-	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+			<script src="js/clock.js"></script>
+			<!-- 要使用别人提供的 icon 图标，所以引入两个 js 文件 -->
+			<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+			<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
