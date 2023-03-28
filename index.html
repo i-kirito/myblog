@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<title>ikirito</title>
+	<link rel="favicon" href="favicon.ico">
+	<meta name=“description” content=“ikirito，总站，博客，导航站” />
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/clock.css">
+	<link rel="stylesheet" href="css/expanding.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+	<script>LA.init({ id: "JhWGXceP1bZ5hrv6", ck: "JhWGXceP1bZ5hrv6" })</script>
+
+	<style>
+		::selection {
+			background: rgba(0, 149, 255, .1);
+		}
+
+		/* 背景图随机API */
+		body:before {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: .3;
+			z-index: -1;
+			content: "";
+			position: fixed;
+			background: url(background.png) repeat fixed center;
+		}
+	</style>
+	<script>
+		$(document).ready(function () {
+			$(".section").css({ height: "650px" });
+			$("#superContainer .active").css({ height: "650px" });
+		})
+	</script>
+</head>
+
+<body>
+	<!-- 整体内容 -->
+	<div class="all_main">
+	</div>
+	<div class="ml-nav">
+			<!-- 头部导航栏 -->
+			<div id="nav" class="navigation">
+				<ul>
+					<li data-menuanchor="page1" class="list">
+						<a href="#page1">
+							<span class="icon">
+								<ion-icon name="chatbubbles-outline"></ion-icon>
+							</span>
+							<span class="text">个人名牌</span>
+						</a>
+					</li>
+					<div class="indicator"></div>
+				</ul>
+			</div>
+		</div>
+	<!-- 局部代码 -->
+	
+	<div class="main_center">
+	    
+		<!-- 主页面 -->
+		<div class="section sectio1">
+			<div class="bg"><img src="images/CC.jpg" alt=""></div>
+			<div class="spirit_txt">
+				<br /><br /><br /><br />
+				<div class="jiankong">
+					<div class="card">
+						<div class="imgBx">
+							<img src="/images/img.png">
+						</div>
+						<div class="content">
+							<div class="details">
+								<div class="box_icon">
+									<span>
+										<a href="https://github.com/i-kirito" target="_blank">
+											<ion-icon name="logo-github"></ion-icon>
+										</a>
+									</span>
+									<span>
+										<a href="https://t.me/ikirit0" target="_blank">
+											<ion-icon name="paper-plane-outline"></ion-icon>
+										</a>
+									</span>
+									<span>
+										<a href="">
+											<ion-icon name="logo-wechat"></ion-icon>
+										</a>
+									</span>
+								</div>
+								<div class="change">
+								<h2>电商2003-梁文豪<br><span>个人名牌</span></h2>
+								<div>
+								<br/>
+                                <h3>资深&nbsp;<span><a style="color:blue;" href="https://www.steamidfinder.com/signature/76561198177270271.png" target="_blank">Steam</a></span>&nbsp;玩家</h3>
+								<br/>
+                                <h2>★一个喜欢捣鼓代码却不想当码农的人★</h2>
+                                <br/>
+                                <h2>未来所向：前端工程师/运维工程师</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- 音乐插件 -->
+	<!--<div class="music">-->
+	<!--	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86-->
+	<!--		src="http://music.163.com/outchain/player?type=2&id=537787665&auto=1&height=66"></iframe>-->
+	<!--</div>-->
+	<script>
+		const list = document.querySelectorAll('.list')
+		function activeLink() {
+			list.forEach(item => {
+				item.classList.remove('active')
+				this.classList.add('active')
+			})
+		}
+		list.forEach(item => {
+			item.addEventListener('click', activeLink)
+		})
+	</script>
+
+	<script src="js/clock.js"></script>
+	<!-- 要使用别人提供的 icon 图标，所以引入两个 js 文件 -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
